@@ -55,9 +55,9 @@ albumID,album_name,album_release_year,album_genre,album_artistID
 
 ## Requirements
 
-### Deliverable 1 - Data Definition Language (10 Points)
-Review the given relational schema for tables **ARTIST** and **ALBUM**.  Convert the database schema into JSON using the data for ALBUM and ARTIST.  Consider using a syntax validator tool such as [https://jsonchecker.com/](https://jsonchecker.com/) to assist you in writing valid JSON. When documenting your code within the README.md file use the markdown syntax that allows for code to be included in your README.md file.  An example is listed below.
-```JSON
+### Deliverable 1 - Data Definition Language (12 Points)
+Review the given relational schema for tables **ARTIST** and **ALBUM**.  Convert the database schema into JSON using the data for ALBUM and ARTIST.  Consider using a syntax validator tool such as [https://jsonchecker.com/](https://jsonchecker.com/) to assist you in writing valid JSON. When documenting your code within the README.md file use the markdown syntax that allows for code to be included in your README.md file.  An example of how to implement coding markdown is listed below.  
+```json
   {
       "title": "Lab 4: From Relational Schema to Document Databases",
       "point_value": 15
@@ -66,26 +66,21 @@ Review the given relational schema for tables **ARTIST** and **ALBUM**.  Convert
   1. Proper JSON Syntax is used to format JSON data
   2. JSON Object is properly structured to represent a one-to-many relationship between **ARTIST** and **ALBUM**.
   3. All 17 JSON objects are reflected in README.md file
-  4. Enforce that the relationship between **CLIENT** and **POLICY** are strong and enforce cascading if either a **CLIENT** or **POLICY** is deleted.
-  5. Include the SQL commands used for creating the database and tables into the file you will use for deliverable 2.
-
+  4. When drafting your JSON objects, you do not need to include the artistID.
 
 ### Deliverable 2 - Reflection on relational and non-relational database schemas (3 Points)
-Reflect on the differences between relational and non-relational database schemas. Consider the advantages and disadvantages of using a document-based database like MongoDB for the given data and document your reflections within this repository README.md file.
+Reflect on the differences between relational and non-relational database schemas. Consider the advantages and disadvantages of using a document-based database like MongoDB for the given data and document your reflections within this repository README.md file. 
+  1. Reflections include 2 or more paragraphs
+  2. Thoughtful considerations given to analysis of relational and non-relational database schemas.
 
 
 ## Submission Guidelines
 
 For this lab, you will only need to update your repository README.md file with the responses for both Deliverable 1 and 2.
-1. The README.MD file that includes screenshots of the result grid window for each SQL query
-   1. Include the image beneath the output image I provide
-
-2. The **lab3.sql** file.  The lab3.sql file should be uploaded to your repository
-
-Once you have completed both of the items above, you will need to submit the link to your repository for lab3 prior to the due date and time listed.  Make sure you receive an email confirmation notifying you that the assignment has been submitted.
+Once you have completed both deliverables above, you will need to submit the link to your repository for lab4 prior to the due date and time listed. 
 
 
 ## Lab Resources
-- [W3 Schools SQL tutorial](https://www.w3schools.com/sql/)
-- [Make a ReadMe file Web-based Editor](https://www.makeareadme.com/)
-- 
+- [Introduction to JSON Workshop slide deck](https://instructorc.github.io/site/slides/presentation/api.html)
+- [JSON Schema Examples Tutorial](https://www.mongodb.com/basics/json-schema-examples)
+
