@@ -6,37 +6,77 @@ This lab will meet the following objectives:
 2.  Interpret JavaScript object notation(JSON) data exchange format
 
 ## Instructions
-For this lab, you will practice converting an ER model into a JSON document store.  
+For this lab, you'll explore the process of converting a relational database schema into a non-relational document schema suitable for MongoDB. You'll work with the given Album and Artist tables and learn to represent the data in JSON format.
 
 ![alt text](https://instructorc.github.io/site/slides/database/images/general/album_artist_erd.PNG)
 
-You will record your relationships within this readme file. 
+You will use the README.md file to document your JSON code using the data listed below.
+```
+artistID,artistName
+1,'Marvin Gaye'
+2,'The Beach Boys'
+3,'Joni Mitchell'
+4,'Stevie Wonder'
+5,'The Beatles'
+6,'Nirvana'
+7,'Fleetwood Mac'
+8,'Prince and the Revolution'
+9,'Bob Dylan'
+10,'Lauryn Hill'
+11,'Michael Jackson'
+12,'Aretha Franklin'
+13,'The Rolling Stones'
+14,'Public Enemy'
+15,'The Clash'
+16,'Kanye West'
+17,'Kendrick Lamar'
 
+albumID,album_name,album_release_year,album_genre,album_artistID
+1,'What's Going On',1971,'soul',1
+2,'Pet Sounds',1966,'pop',2
+3,'Blue',1971,'folk',3
+4,'Songs in the Key of Life',1976,'funk',4
+5,'Abbey Road',1969,'rock',5
+6,'Nevermind',1991,'rock',6
+7,'Rumours',1977,'rock',7
+8,'Purple Rain',1984,'funk',8
+9,'Blood on the Tracks',1975,'rock',9
+10,'The Miseducation of Lauryn Hill',1998,'r&b',10
+11,'Revolver',1966,'rock',5
+12,'Thriller',1982,'pop',11
+13,'I Never Loved a Man the Way I Love You',1967,'soul',12
+14,'Exile on Main Street',1972,'rock',13
+15,'It Takes a Nation of Millions to Hold Us Back',1988,'rap',14
+16,'London Calling',1979,'rock',15
+17,'My Beautiful Dark Twisted Fantasy',2010,'rap',16
+18,'Highway 61 Revisited',1965,'rock',9
+19,'To Pimp a Butterfly',2015,'rap',17
+```
 
 ## Requirements
 
-### Deliverable 1 - Data Definition Language (5 Points)
-1 Recreate the database schema identified above.  You can do this one of two ways.  You can use the Modeling tool in Workbench or you can write the SQL commands to create the database and related tables.  Whether you create the database schema using the database modeling tool in MySQL workbench or you create via command line, you will need to provide the commands used to create the database and related tables.  You can include those commands within the file you will use for deliverable 2.  
-  1. Make sure all of the relationships are properly configured
-  2. Make sure the primary key is specified and auto increments for both the **CLIENT** and **POLICY** table
-  3. Make sure all columns in the database are marked as NOT NULL
+### Deliverable 1 - Data Definition Language (10 Points)
+Review the given relational schema for tables **ARTIST** and **ALBUM**.  Convert the database schema into JSON using the data for ALBUM and ARTIST.  Consider using a syntax validator tool such as [https://jsonchecker.com/](https://jsonchecker.com/) to assist you in writing valid JSON. When documenting your code within the README.md file use the markdown syntax that allows for code to be included in your README.md file.  An example is listed below.
+```JSON
+  {
+      "title": "Lab 4: From Relational Schema to Document Databases",
+      "point_value": 15
+  }
+```
+  1. Proper JSON Syntax is used to format JSON data
+  2. JSON Object is properly structured to represent a one-to-many relationship between **ARTIST** and **ALBUM**.
+  3. All 17 JSON objects are reflected in README.md file
   4. Enforce that the relationship between **CLIENT** and **POLICY** are strong and enforce cascading if either a **CLIENT** or **POLICY** is deleted.
   5. Include the SQL commands used for creating the database and tables into the file you will use for deliverable 2.
 
 
-### Deliverable 2 - Data Manipulation Language (10 Points)
-Create a file called **lab3.sql** and add the following queries into the file.  You will need to take a screenshot of the rendered output for each command and place a screenshot of your output beneath the example output provided.  Make sure to place a SQL comment above each command identifying the query.  In order to make changes to the data, you may need to change the SQL Editor settings.  You can do this by navigating to EDIT -> SQL Editor -> and unchecking Safe Updates.  It is advised to restart MySQL Workbench after changing this setting.
-
-
-### Extra Credit (2 Points)
-List all clients along with their respective policies.<br>
-<img src="https://instructorc.github.io/site/slides/database/images/lab3/ec.PNG" width="550" alt="output query Extra credit"/>
-
+### Deliverable 2 - Reflection on relational and non-relational database schemas (3 Points)
+Reflect on the differences between relational and non-relational database schemas. Consider the advantages and disadvantages of using a document-based database like MongoDB for the given data and document your reflections within this repository README.md file.
 
 
 ## Submission Guidelines
 
-For this lab, you will submit 2 items to the repository that has been assigned to you.  The two items that you will need to submit are listed below: 
+For this lab, you will only need to update your repository README.md file with the responses for both Deliverable 1 and 2.
 1. The README.MD file that includes screenshots of the result grid window for each SQL query
    1. Include the image beneath the output image I provide
 
