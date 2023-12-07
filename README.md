@@ -1,7 +1,7 @@
 # Lab 4 - From Relational Schema to Document Databases
 This lab will meet the following objectives:
 
-1.  Distinguish the difference between a relational non-relational database schema.
+1.  Distinguish the difference between a relational and non-relational database schema.
 
 2.  Interpret JavaScript object notation(JSON) data exchange format
 
